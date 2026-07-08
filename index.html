@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Bella Donna - O verdadeiro sabor artesanal</title>
+    <!-- Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50 text-stone-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-red-700 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-pizza-slice text-amber-400"></i> BELLA DONNA
+            </a>
+            <div class="space-x-6 hidden md:flex font-medium">
+                <a href="#inicio" class="hover:text-amber-400 transition">Início</a>
+                <a href="#cardapio" class="hover:text-amber-400 transition">Cardápio</a>
+                <a href="#cadastro" class="hover:text-amber-400 transition">Cadastro</a>
+                <a href="#sobre" class="hover:text-amber-400 transition">Sobre Nós</a>
+            </div>
+            <a href="https://wa.me/5500999999999" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-stone-900 px-4 py-2 rounded-full font-bold transition flex items-center gap-2 text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Fazer Pedido
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative bg-stone-900 text-white py-24 px-4 text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop');">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-amber-400 font-bold uppercase tracking-widest text-sm">Tradição & Sabor</span>
+            <h1 class="text-4xl md:text-6xl font-black mt-2 mb-6 tracking-tight">Pizzas Artesanais Assadas no Forno a Lenha</h1>
+            <p class="text-lg md:text-xl text-stone-300 mb-8 max-w-2xl mx-auto">Massa de fermentação lenta, molho de tomate fresco e os melhores ingredientes selecionados.</p>
+            <a href="#cardapio" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg transition transform hover:scale-105 inline-block">
+                Ver Cardápio Completo
+            </a>
+        </div>
+    </header>
+
+    <!-- Cardápio Section -->
+    <main id="cardapio" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-stone-900 relative inline-block">
+                Nosso Cardápio
+                <span class="block h-1 bg-red-600 w-16 mx-auto mt-2 rounded"></span>
+            </h2>
+            <p class="text-stone-600 mt-3">Escolha entre as nossas 15 opções irresistíveis</p>
+        </div>
+
+        <!-- Grid de Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=600&auto=format&fit=crop" alt="Margherita" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">01. Margherita</h3>
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2 py-1 rounded">Clássica</span>
+                        </div>
+                        <p class="text-sm text-stone-600">Molho de tomate artesanal, mozzarella de búfala, manjericão fresco e azeite extravirgem.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-650 text-red-600">R$ 42,90</span>
+                    <a href="https://wa.me/5500999999999?text=Quero%20uma%20Pizza%20Margherita" target="_blank" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=600&auto=format&fit=crop" alt="Calabresa" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">02. Calabresa</h3>
+                            <span class="bg-red-100 text-red-800 text-xs font-bold px-2 py-1 rounded">Favorita</span>
+                        </div>
+                        <p class="text-sm text-stone-600">Molho de tomate, mozzarella premium, calabresa defumada fatiada e cebola roxa.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 44,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=600&auto=format&fit=crop" alt="Quatro Queijos" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">03. Quatro Queijos</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Combinação perfeita de mozzarella, provolone, gorgonzola marcante e catupiry original.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 49,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=600&auto=format&fit=crop" alt="Frango com Catupiry" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">04. Frango C/ Catupiry</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Frango desfiado artesanal bem temperado, coberto com o autêntico requeijão Catupiry.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 46,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=600&auto=format&fit=crop" alt="Portuguesa" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">05. Portuguesa</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Presunto cozido, mozzarella, ovos cozidos, ervilha, cebola e azeitonas pretas chilenas.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 47,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=600&auto=format&fit=crop" alt="Pepperoni" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">06. Pepperoni</h3>
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2 py-1 rounded">Mais Vendida</span>
+                        </div>
+                        <p class="text-sm text-stone-600">Molho de tomate, mozzarella, fatias generosas de salame Pepperoni levemente picante.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 52,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="./img/rucula tomate seco.jpg" alt="Rúcula com Tomate Seco" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">07. Rúcula C/ Tomate Seco</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Mozzarella de búfala, folhas frescas de rúcula selecionadas e tomate seco da casa.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 51,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?q=80&w=600&auto=format&fit=crop" alt="Bacon com Alho Poró" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">08. Bacon C/ Alho Poró</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Bacon crocante em cubos, alho-poró fatiado, creme de queijo e base de mozzarella.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 49,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1571066811602-716837d681de?q=80&w=600&auto=format&fit=crop" alt="Vegetariana" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">09. Vegetariana</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">Veggie</span>
+                        </div>
+                        <p class="text-sm text-stone-600">Mix de cogumelos, abobrinha grelhada, pimentões defumados, cebola roxa e manjericão.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 46,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="./img/Lombo canadense.jpg" alt="Lombo Defumado" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">10. Lombo Canadense</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Lombo canadense fatiado, cebola, finas fatias de tomate e cobertura de Catupiry original.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 48,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1555072956-7758afb20e8f?q=80&w=600&auto=format&fit=crop" alt="Milho" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">11. Milho Especial</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Milho verde cozido no vapor, mozzarella, fatias de bacon tostadas e orégano.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 41,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?q=80&w=600&auto=format&fit=crop" alt="Caprese" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">12. Caprese Suprema</h3>
+                        </div>
+                        <p class="text-sm text-stone-600">Base de mozzarella, fatias de tomate caqui, rodelas de mozzarella de búfala, pesto de manjericão e azeitonas.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 54,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 13 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?q=80&w=600&auto=format&fit=crop" alt="Banana com Canela" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">13. Banana C/ Canela</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2 py-1 rounded">Doce</span>
+                        </div>
+                        <p class="text-sm text-stone-600">Fatias finas de banana, açúcar refinado, canela em pó salpicada e leite condensado.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 39,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="./img/Morango com brigadeiro.jpg" alt="Brigadeiro" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">14. Brigadeiro C/ Morango</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2 py-1 rounded">Doce</span>
+                        </div>
+                        <p class="text-sm text-stone-600">Chocolate ao leite artesanal espalhado na massa, morangos frescos fatiados e granulado.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 44,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 15 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between border border-stone-100">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=80&w=600&auto=format&fit=crop" alt="Nutella" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">15. Nutella C/ Leite Ninho</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2 py-1 rounded">Premium Doce</span>
+                        </div>
+                        <p class="text-sm text-stone-600">O autêntico creme de avelã Nutella finalizado com Leite Ninho polvilhado após o forno.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
+                    <span class="text-2xl font-black text-red-600">R$ 49,90</span>
+                    <a href="#" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-cart-plus"></i> Pedir
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- NOVA SEÇÃO: Formulário de Cadastro / Entrega -->
+    <section id="cadastro" class="max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-2xl shadow-xl border border-stone-100 overflow-hidden grid grid-cols-1 md:grid-cols-3">
+            
+            <!-- Coluna de Destaque Esquerda -->
+            <div class="bg-red-700 p-8 text-white flex flex-col justify-between md:col-span-1">
+                <div>
+                    <h3 class="text-2xl font-black mb-2">Cadastre-se e Ganhe Desconto!</h3>
+                    <p class="text-red-100 text-sm leading-relaxed">Faça seu cadastro de endereço para agilizar seus próximos pedidos e receba um cupom de 10% na primeira compra.</p>
+                </div>
+                <div class="mt-8 md:mt-0 space-y-4 text-xs text-red-200">
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-shield-halved text-amber-400 text-sm"></i> Seus dados estão protegidos.</div>
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-truck-fast text-amber-400 text-sm"></i> Entrega rápida garantida.</div>
+                </div>
+            </div>
+
+            <!-- Coluna do Formulário Direita -->
+            <div class="p-8 md:col-span-2">
+                <form id="formCadastro" onsubmit="salvarCadastro(event)" class="space-y-4">
+                    
+                    <!-- Linha 1: Nome e E-mail -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="nome" class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-1">Nome Completo</label>
+                            <input type="text" id="nome" required placeholder="Ex: João Silva" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-red-600 focus:bg-white transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-1">E-mail</label>
+                            <input type="email" id="email" required placeholder="Ex: joao@email.com" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-red-600 focus:bg-white transition">
+                        </div>
+                    </div>
+
+                    <!-- Linha 2: CEP e Estado (Lado a Lado) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="sm:col-span-2">
+                            <label for="cep" class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-1">CEP</label>
+                            <div class="relative">
+                                <input type="text" id="cep" maxlength="9" required placeholder="00000-000" onblur="buscarCEP()" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-red-600 focus:bg-white transition">
+                                <span id="statusCep" class="absolute right-3 top-3 text-xs text-stone-400"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="estado" class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-1">Estado (UF)</label>
+                            <input type="text" id="estado" required placeholder="Ex: SP" maxlength="2" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-red-600 focus:bg-white transition uppercase">
+                        </div>
+                    </div>
+
+                    <!-- Linha 3: Cidade -->
+                    <div>
+                        <label for="cidade" class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-1">Cidade</label>
+                        <input type="text" id="cidade" required placeholder="Nome da Cidade" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-red-600 focus:bg-white transition">
+                    </div>
+
+                    <!-- Linha 4: Rua / Logradouro -->
+                    <div>
+                        <label for="rua" class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-1">Rua / Endereço</label>
+                        <input type="text" id="rua" required placeholder="Ex: Av. Paulista, nº 100" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-red-600 focus:bg-white transition">
+                    </div>
+
+                    <!-- Botão Enviar -->
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-stone-900 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-xl transition shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-user-plus"></i> Finalizar Cadastro
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós / Informações -->
+    <section id="sobre" class="bg-stone-900 text-stone-100 py-16 px-4">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-black mb-4 text-white">Mais que uma Pizza, uma Tradição.</h2>
+                <p class="text-stone-400 leading-relaxed mb-4">Desde a nossa fundação, mantemos o compromisso de trazer a verdadeira experiência da pizza italiana para a sua mesa, sem abrir mão do toque e do calor brasileiro.</p>
+                <div class="space-y-3 font-medium">
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-clock text-amber-400"></i> Terça a Domingo: 18h às 23h30</div>
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-amber-400"></i> Av. Principal da Cidade, 1500 - Centro</div>
+                </div>
+            </div>
+            <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 text-center">
+                <i class="fa-solid fa-motorcycle text-4xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 text-white">Pediu, Chegou!</h3>
+                <p class="text-stone-400 text-sm mb-6">Entregamos no conforto da sua casa com taxa fixa para toda a região central.</p>
+                <a href="https://wa.me/5500999999999" target="_blank" class="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-bold py-3 rounded-xl transition">
+                    Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-500 text-center py-6 text-sm border-t border-stone-900">
+        <p>&copy; 2026 Pizzaria Bella Donna. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts Inteligentes -->
+    <script>
+        // Função para formatar e buscar o CEP automaticamente na API ViaCEP
+        function buscarCEP() {
+            const cepInput = document.getElementById('cep');
+            const status = document.getElementById('statusCep');
+            
+            // Remove caracteres que não sejam números
+            let cep = cepInput.value.replace(/\D/g, '');
+            
+            if (cep.length === 8) {
+                // Formata visualmente o CEP digitado (00000-000)
+                cepInput.value = cep.substring(0, 5) + '-' + cep.substring(5);
+                status.innerText = "Buscando...";
+                
+                fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (!data.erro) {
+                            document.getElementById('rua').value = data.logradouro;
+                            document.getElementById('cidade').value = data.localidade;
+                            document.getElementById('estado').value = data.uf;
+                            status.innerText = "✓";
+                        } else {
+                            status.innerText = "CEP não encontrado";
+                            limparCamposEndereco();
+                        }
+                    })
+                    .catch(() => {
+                        status.innerText = "Erro ao buscar";
+                    });
+            } else {
+                status.innerText = "CEP inválido";
+                limparCamposEndereco();
+            }
+        }
+
+        function limparCamposEndereco() {
+            document.getElementById('rua').value = '';
+            document.getElementById('cidade').value = '';
+            document.getElementById('estado').value = '';
+        }
+
+        // Simulação do envio do formulário
+        function salvarCadastro(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            alert(`Obrigado pelo cadastro, ${nome}! Seu cupom de 10% OFF é: BELLAPRI10`);
+            document.getElementById('formCadastro').reset();
+            document.getElementById('statusCep').innerText = '';
+        }
+    </script>
+</body>
+</html>
