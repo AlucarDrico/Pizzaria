@@ -22,7 +22,7 @@
                 <a href="#cadastro" class="hover:text-amber-400 transition">Cadastro</a>
                 <a href="#sobre" class="hover:text-amber-400 transition">Sobre Nós</a>
             </div>
-            <a href="https://wa.me/5500999999999" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-stone-900 px-4 py-2 rounded-full font-bold transition flex items-center gap-2 text-sm">
+            <a href="https://wa.me/5511981714310" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-stone-900 px-4 py-2 rounded-full font-bold transition flex items-center gap-2 text-sm">
                 <i class="fa-brands fa-whatsapp text-lg"></i> Fazer Pedido
             </a>
         </div>
@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
-                    <span class="text-2xl font-black text-red-650 text-red-600">R$ 42,90</span>
-                    <a href="https://wa.me/5500999999999?text=Quero%20uma%20Pizza%20Margherita" target="_blank" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
+                    <span class="text-2xl font-black text-red-600">R$ 42,90</span>
+                    <a href="https://wa.me/5511981714310?text=Quero%20uma%20Pizza%20Margherita" target="_blank" class="bg-stone-900 hover:bg-red-600 text-white p-2.5 rounded-xl transition text-sm font-bold flex items-center gap-2">
                         <i class="fa-solid fa-cart-plus"></i> Pedir
                     </a>
                 </div>
@@ -314,7 +314,7 @@
                             <h3 class="text-xl font-bold text-stone-900">14. Brigadeiro C/ Morango</h3>
                             <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2 py-1 rounded">Doce</span>
                         </div>
-                        <p class="text-sm text-stone-600">Chocolate ao leite artesanal espalhado na massa, morangos frescos fatiados e granulado.</p>
+                        <p class="text-sm text-stone-600">Chocolate ao leite artesanal espalhado na masa, morangos frescos fatiados e granulado.</p>
                     </div>
                 </div>
                 <div class="p-5 pt-0 flex justify-between items-center border-t border-stone-50 mt-4">
@@ -442,7 +442,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-stone-950 text-stone-500 text-center py-6 text-sm border-t border-stone-900">
+    <footer class="bg-stone-950 text-stone-500 text-center py-8 text-sm border-t border-stone-900 flex flex-col items-center gap-4">
+        <!-- Ícones das Redes Sociais -->
+        <div class="flex gap-6 text-xl">
+            <a href="https://instagram.com/seu_perfil" target="_blank" class="text-stone-400 hover:text-amber-400 transition" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/seu_perfil" target="_blank" class="text-stone-400 hover:text-amber-400 transition" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
         <p>&copy; 2026 Pizzaria Bella Donna. Todos os direitos reservados.</p>
     </footer>
 
@@ -471,31 +480,18 @@
                             status.innerText = "✓";
                         } else {
                             status.innerText = "CEP não encontrado";
-                            limparCamposEndereco();
                         }
                     })
                     .catch(() => {
-                        status.innerText = "Erro ao buscar";
+                        status.innerText = "Erro ao buscar CEP";
                     });
-            } else {
-                status.innerText = "CEP inválido";
-                limparCamposEndereco();
             }
         }
 
-        function limparCamposEndereco() {
-            document.getElementById('rua').value = '';
-            document.getElementById('cidade').value = '';
-            document.getElementById('estado').value = '';
-        }
-
-        // Simulação do envio do formulário
+        // Função placeholder para o envio do formulário
         function salvarCadastro(event) {
             event.preventDefault();
-            const nome = document.getElementById('nome').value;
-            alert(`Obrigado pelo cadastro, ${nome}! Seu cupom de 10% OFF é: BELLAPRI10`);
-            document.getElementById('formCadastro').reset();
-            document.getElementById('statusCep').innerText = '';
+            alert("Cadastro realizado com sucesso!");
         }
     </script>
 </body>
